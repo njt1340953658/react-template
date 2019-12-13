@@ -1,0 +1,15 @@
+{
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr"
+      ]
+    }
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://your-api-server",
+      "changeOrigin": true
+    }
+  }
+}
